@@ -1,0 +1,13 @@
+[project]
+name = "computational-mesh-generation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.8",
+    "meshio>=5.3.5",
+    "numpy>=2.4.0",
+    "scipy>=1.16.3",
+    "shapely>=2.1.2",
+]
