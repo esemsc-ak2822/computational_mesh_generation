@@ -92,7 +92,7 @@ def gen_naca4(code: str,
     lower = np.column_stack([x_l, y_l])[1:]
     boundary = np.vstack([upper, lower])
 
-    return boundary, y_t
+    return boundary
 
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
@@ -101,18 +101,16 @@ if __name__ == "__main__":
     test_cases = ["1052"]
 
     for code in test_cases:
-        boundary, y_t = gen_naca4(
+        boundary = gen_naca4(
             code=code,
             chord=1.0,
             n_chord=100
         )
 
         x, y = boundary[:, 0], boundary[:, 1]
-        x_t = np.linspace(0,1, 100)
 
         plt.figure(figsize=(6, 2))
         plt.plot(x, y, "-k", lw=1)
-        plt.plot(x_t, y_t, "-b", lw =1)
         plt.scatter(x[0], y[0], color="red", label="Start point")
         plt.scatter(x[len(x)//2], y[len(x)//2], color="blue", label="Mid point")
         plt.axis("equal")

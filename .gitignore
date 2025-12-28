@@ -1,2 +1,11 @@
 .venv
 uv.lock
+src/computational_mesh_generation.egg-info/dependency_links.txt
+src/computational_mesh_generation.egg-info/PKG-INFO
+src/computational_mesh_generation.egg-info/requires.txt
+src/computational_mesh_generation.egg-info/SOURCES.txt
+src/computational_mesh_generation.egg-info/top_level.txt
+src/meshgen/__pycache__/domain.cpython-312.pyc
+src/meshgen/__pycache__/naca4.cpython-312.pyc
+src/meshgen/__pycache__/naca4.cpython-311.pyc
+src/meshgen/__pycache__/triangulate.cpython-312.pyc
